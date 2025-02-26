@@ -1,0 +1,32 @@
+[project]
+name = "llama3-abhidharma"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "MountAye", email = "dev@mountaye.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "llama-stack (>=0.1.4,<0.2.0)",
+    "torch (>=2.6.0,<3.0.0)",
+    "torchvision (>=0.21.0,<0.22.0)",
+    "torchaudio (>=2.6.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "llama3_8b", from = "src"}]
+
+[[tool.poetry.source]]
+name = "torch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+priority = "explicit"
+
+
+[tool.poetry.dependencies]
+torch = {source = "torch-cu126"}
+torchvision = {source = "torch-cu126"}
+torchaudio = {source = "torch-cu126"}
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
