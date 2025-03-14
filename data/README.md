@@ -1,0 +1,4 @@
+- `./zh-TW`: original text data in tradition Chinese. 
+    - Files under 3 folders are from CBETA. They have modern punctuations.
+    - The single txt file is from Mr. Wang Lu. It does not have modern punctuations. It adds extra question-answer pairs by Mr. Wang.
+- `./zh-CN`: same files under `./zh-TW` converted into simplified Chinese with opencc.

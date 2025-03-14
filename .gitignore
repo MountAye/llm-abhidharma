@@ -1,0 +1,14 @@
+# specific to this project
+models/
+data/zh-TW/
+/data/JSON/*
+!/data/JSON/*.json
+
+# python
+__pycache__/
+
+# python-poetry
+.venv/
+
+# vscode
+.vscode/
