@@ -1,8 +1,8 @@
 # specific to this project
 models/
 data/zh-TW/
-/data/JSON/*
-!/data/JSON/*.json
+/data/JSON/
+!/data/JSON/**/*.json
 
 # python
 __pycache__/
